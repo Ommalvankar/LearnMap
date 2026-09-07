@@ -1,0 +1,432 @@
+.dashboard-page {
+  min-height: 100vh;
+  background: #f5f3ff;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header {
+  width: 100%;
+  padding: 45px 8%;
+  background: #4f46e5;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard-small-title {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.dashboard-header p:last-child {
+  margin-top: 8px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+/* HOME BUTTON */
+
+.dashboard-home-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+
+  background: white;
+  color: #4f46e5;
+
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.dashboard-home-btn:hover {
+  transform: translateY(-2px);
+  background: #eeeeff;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px 80px;
+}
+
+/* =========================
+   STAT CARDS
+========================= */
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 60px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0efff;
+  border-radius: 18px;
+
+  font-size: 30px;
+}
+
+.stat-card h2 {
+  margin: 0;
+  color: #222;
+  font-size: 28px;
+}
+
+.stat-card p {
+  margin-top: 3px;
+  color: #777;
+  font-size: 13px;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.dashboard-section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.dashboard-section-heading p {
+  margin-bottom: 8px;
+  color: #4f46e5;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.dashboard-section-heading h2 {
+  margin: 0;
+  color: #222;
+  font-size: 34px;
+  font-weight: 800;
+}
+
+.dashboard-section-heading span {
+  display: block;
+  margin-top: 10px;
+
+  color: #777;
+  font-size: 14px;
+}
+
+/* =========================
+   SUBJECT CARDS
+========================= */
+
+.dashboard-subjects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.dashboard-subject-card {
+  background: white;
+
+  padding: 30px 20px;
+
+  border-radius: 20px;
+
+  text-align: center;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+
+  transition: 0.3s;
+}
+
+.dashboard-subject-card:hover {
+  transform: translateY(-7px);
+
+  box-shadow: 0 15px 35px rgba(79, 70, 229, 0.15);
+}
+
+.dashboard-subject-icon {
+  width: 70px;
+  height: 70px;
+
+  margin: 0 auto 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0efff;
+  border-radius: 20px;
+
+  font-size: 34px;
+}
+
+.dashboard-subject-card h3 {
+  margin-bottom: 18px;
+
+  color: #222;
+  font-size: 19px;
+}
+
+.dashboard-subject-card button {
+  padding: 10px 22px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: #4f46e5;
+  color: white;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.dashboard-subject-card button:hover {
+  background: #3730a3;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .dashboard-header {
+    padding: 35px 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .dashboard-header h1 {
+    font-size: 28px;
+  }
+
+  .dashboard-home-btn {
+    align-self: flex-start;
+  }
+
+  .dashboard-container {
+    padding: 35px 20px 60px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 45px;
+  }
+
+  .dashboard-section-heading h2 {
+    font-size: 28px;
+  }
+
+  .dashboard-subjects {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+/* =========================
+   QUIZ PROGRESS
+========================= */
+
+.progress-section {
+  margin-bottom: 70px;
+}
+
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.progress-card {
+  background: white;
+  padding: 20px 25px;
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.progress-subject {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.progress-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f0efff;
+  border-radius: 15px;
+
+  font-size: 25px;
+}
+
+.progress-subject h3 {
+  margin: 0;
+  color: #222;
+  font-size: 16px;
+}
+
+.progress-subject p {
+  margin-top: 4px;
+  color: #777;
+  font-size: 13px;
+}
+
+.progress-score {
+  text-align: right;
+}
+
+.progress-score strong {
+  display: block;
+  color: #4f46e5;
+  font-size: 20px;
+}
+
+.progress-score span {
+  color: #777;
+  font-size: 12px;
+}
+
+.progress-score button {
+  padding: 9px 18px;
+
+  border: none;
+  border-radius: 20px;
+
+  background: #4f46e5;
+  color: white;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.progress-score button:hover {
+  background: #3730a3;
+}
+
+@media (max-width: 600px) {
+
+  .progress-card {
+    padding: 17px;
+  }
+
+  .progress-subject {
+    gap: 10px;
+  }
+
+  .progress-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 22px;
+  }
+
+  .progress-subject h3 {
+    font-size: 14px;
+  }
+
+  .progress-subject p {
+    font-size: 11px;
+  }
+
+  .progress-score strong {
+    font-size: 17px;
+  }
+
+}
+.dashboard-buttons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.dashboard-logout-btn {
+  padding: 12px 25px;
+  border: 2px solid white;
+  border-radius: 25px;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashboard-logout-btn:hover {
+  background: white;
+  color: #4f46e5;
+}
+
+@media (max-width: 768px) {
+  .dashboard-buttons {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .dashboard-home-btn,
+  .dashboard-logout-btn {
+    flex: 1;
+  }
+}

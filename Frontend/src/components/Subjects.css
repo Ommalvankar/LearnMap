@@ -1,0 +1,88 @@
+.subjects-section {
+  width: 100%;
+
+  padding: 80px 8%;
+
+  background: #ffffff;
+}
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+  text-align: center;
+
+  margin-bottom: 45px;
+}
+
+.section-small-title {
+  color: #4f46e5;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 3px;
+
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  margin: 0;
+
+  font-size: 38px;
+  font-weight: 800;
+
+  color: #222222;
+}
+
+.section-description {
+  margin-top: 12px;
+
+  color: #777777;
+
+  font-size: 15px;
+}
+
+/* =========================
+   SUBJECT GRID
+========================= */
+
+.subjects-grid {
+  width: 100%;
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+/* ================================
+   RESPONSIVE SUBJECTS
+================================ */
+
+@media (max-width: 768px) {
+
+  .subjects-section {
+    padding: 60px 20px;
+  }
+
+  .section-heading h2 {
+    font-size: 30px;
+  }
+
+  .section-description {
+    font-size: 14px;
+  }
+
+  .subjects-grid {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    max-width: 450px;
+  }
+}

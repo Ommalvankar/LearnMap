@@ -1,0 +1,307 @@
+.quiz-page {
+  min-height: 100vh;
+  background: #f5f3ff;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.quiz-header {
+  position: relative;
+  text-align: center;
+  background: #4f46e5;
+  color: white;
+  padding: 45px 20px 50px;
+}
+
+.quiz-header p {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.quiz-header h1 {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.quiz-header span {
+  display: block;
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+/* =========================
+   BACK BUTTON
+========================= */
+
+.quiz-back-btn {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+
+  padding: 10px 20px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: white;
+  color: #4f46e5;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.quiz-back-btn:hover {
+  background: #eeeeff;
+}
+
+/* =========================
+   QUIZ CONTAINER
+========================= */
+
+.quiz-container {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  padding: 50px 25px 80px;
+}
+
+/* =========================
+   QUESTION NUMBER
+========================= */
+
+.quiz-question-number {
+  text-align: center;
+
+  color: #4f46e5;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  margin-bottom: 12px;
+}
+
+/* =========================
+   PROGRESS
+========================= */
+
+.quiz-progress {
+  width: 100%;
+  height: 8px;
+
+  background: #ddd9ff;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  margin-bottom: 35px;
+}
+
+.quiz-progress-bar {
+  height: 100%;
+
+  background: #4f46e5;
+
+  border-radius: 10px;
+
+  transition: width 0.3s ease;
+}
+
+/* =========================
+   QUESTION CARD
+========================= */
+
+.question-card {
+  background: white;
+
+  padding: 40px;
+
+  border-radius: 25px;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.question-card h2 {
+  margin: 0 0 30px;
+
+  color: #222;
+
+  font-size: 25px;
+  line-height: 1.5;
+
+  font-weight: 700;
+}
+
+/* =========================
+   OPTIONS
+========================= */
+
+.options-container {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+.option-btn {
+  width: 100%;
+
+  padding: 16px 20px;
+
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+
+  border: 2px solid #eeeeee;
+
+  border-radius: 15px;
+
+  background: white;
+
+  color: #333;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.option-btn:hover {
+  border-color: #4f46e5;
+
+  background: #f8f7ff;
+}
+
+.option-btn.selected {
+  border-color: #4f46e5;
+
+  background: #f0efff;
+
+  color: #4f46e5;
+
+  font-weight: 600;
+}
+
+/* =========================
+   OPTION NUMBER
+========================= */
+
+.option-number {
+  width: 35px;
+  height: 35px;
+
+  margin-right: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f0efff;
+
+  color: #4f46e5;
+
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+.option-btn.selected .option-number {
+  background: #4f46e5;
+
+  color: white;
+}
+
+/* =========================
+   NEXT BUTTON
+========================= */
+
+.next-btn {
+  width: 100%;
+
+  margin-top: 30px;
+
+  padding: 15px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  background: #4f46e5;
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.next-btn:hover {
+  background: #3730a3;
+
+  transform: translateY(-2px);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .quiz-header {
+    padding: 45px 20px 40px;
+  }
+
+  .quiz-header h1 {
+    font-size: 30px;
+  }
+
+  .quiz-back-btn {
+    left: 15px;
+    top: 15px;
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+
+  .quiz-container {
+    padding: 35px 18px 60px;
+  }
+
+  .question-card {
+    padding: 25px 20px;
+  }
+
+  .question-card h2 {
+    font-size: 20px;
+  }
+
+  .option-btn {
+    padding: 13px 15px;
+    font-size: 14px;
+  }
+
+  .option-number {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+}
